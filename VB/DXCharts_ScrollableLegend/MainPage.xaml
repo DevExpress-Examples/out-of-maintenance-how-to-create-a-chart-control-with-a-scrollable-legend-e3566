@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="DXCharts_ScrollableLegend.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts"
+    mc:Ignorable="d"
+    d:DesignHeight="500" d:DesignWidth="800" Loaded="Window_Loaded">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <dxc:ChartControl Name="chart" >
+            <!--region #legend-->
+            <dxc:ChartControl.Legend>
+                <dxc:Legend>
+                    <dxc:Legend.Template>
+                        <ControlTemplate TargetType="dxc:Legend">
+                            <Border Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" Padding="{TemplateBinding Padding}">
+                                <ScrollViewer MaxHeight="200">
+                                    <dxc:LegendItemsControl ItemTemplate="{TemplateBinding ItemTemplate}" 
+                                                            ItemsSource="{Binding Path=Items, RelativeSource={RelativeSource TemplatedParent}}">
+                                        <dxc:LegendItemsControl.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                <StackPanel Orientation="Vertical"/>
+                                            </ItemsPanelTemplate>
+                                        </dxc:LegendItemsControl.ItemsPanel>
+                                    </dxc:LegendItemsControl>
+                                </ScrollViewer>
+                            </Border>
+                        </ControlTemplate>
+                    </dxc:Legend.Template>
+                </dxc:Legend>
+            </dxc:ChartControl.Legend>
+            <!--endregion #legend-->
+            <dxc:ChartControl.Diagram>
+                <dxc:XYDiagram2D Name="xyDiagram" />
+            </dxc:ChartControl.Diagram>
+        </dxc:ChartControl>
+    </Grid>
+</UserControl>
