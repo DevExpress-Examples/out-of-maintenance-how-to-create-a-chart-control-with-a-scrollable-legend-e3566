@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainPage.xaml](./CS/DXCharts_ScrollableLegend/MainPage.xaml) (VB: [MainPage.xaml.vb](./VB/DXCharts_ScrollableLegend/MainPage.xaml.vb))
+* [MainPage.xaml.cs](./CS/DXCharts_ScrollableLegend/MainPage.xaml.cs) (VB: [MainPage.xaml.vb](./VB/DXCharts_ScrollableLegend/MainPage.xaml.vb))
+<!-- default file list end -->
 # How to create a chart control with a scrollable legend
 
 
