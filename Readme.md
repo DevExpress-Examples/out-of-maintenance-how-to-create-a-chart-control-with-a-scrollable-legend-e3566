@@ -5,6 +5,9 @@
 * [MainPage.xaml.cs](./CS/DXCharts_ScrollableLegend/MainPage.xaml.cs) (VB: [MainPage.xaml.vb](./VB/DXCharts_ScrollableLegend/MainPage.xaml.vb))
 <!-- default file list end -->
 # How to create a chart control with a scrollable legend
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e3566)**
+<!-- run online end -->
 
 
 <p>This example illustrates how to create a chart control with a scrollable legend. This may be required, for instance, when a chart displays too many series, or a legend occupies too much space.</p><p><br />
